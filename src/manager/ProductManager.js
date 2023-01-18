@@ -4,7 +4,7 @@ import { v4 as code } from 'uuid';
 export class ProductManager {
   constructor(path){
     this.path = path;
-    fs.writeFileSync(this.path, JSON.stringify([]));
+    // fs.writeFileSync(this.path, JSON.stringify([]));
   }
 
   async addProduct(product){
