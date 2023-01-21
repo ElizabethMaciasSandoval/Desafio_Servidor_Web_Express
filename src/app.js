@@ -1,7 +1,7 @@
 import express from "express";
-import { ProductManager } from "./manager/ProductManager.js";
+import { ProductManager } from './class/ProductManager.js';
 
-const manager = new ProductManager('src/files/products.json')
+const manager = new ProductManager('./files/products.json')
 
 const puerto = 8080;
 const app = express();
